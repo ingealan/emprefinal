@@ -1,0 +1,140 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top px-3">
+  <a class="navbar-brand" [routerLink]="['/home']">
+    <img src="icon.png" alt="Logo o foto de perfil" class="navbar-logo">
+  </a>
+
+  <!-- Botón hamburguesa -->
+  <button 
+    class="navbar-toggler" 
+    type="button" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Contenedor colapsable -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home']">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateTo('biografia')">Biografía</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateTo('especialidades')">Especialidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateTo('casos')">Casos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateTo('testimonios')">Testimonios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateTo('contacto')">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!-- Hero -->
+<section id="inicio" class="hero-section">
+  <div class="hero-content">
+    <h1>Estudio Jurídico Juan Pérez</h1>
+    <p>Soluciones legales con experiencia, ética y compromiso.</p>
+  </div>
+</section>
+
+<!-- ¿Por qué elegirnos? -->
+<section class="section-card light-bg">
+  <h2>¿Por qué elegirnos?</h2>
+  <ul class="why-us-list">
+    <li>✔ Más de 10 años de experiencia en Derecho Civil.</li>
+    <li>✔ Alta tasa de éxito en litigios y negociaciones.</li>
+    <li>✔ Atención personalizada y enfoque humano.</li>
+    <li>✔ Transparencia, ética profesional y compromiso total.</li>
+  </ul>
+</section>
+
+<!-- Biografía -->
+<section id="biografia" class="bio-section">
+  <img class="bio-photo" src="https://img.freepik.com/foto-gratis/primer-plano-abogado-maduro-que-sostiene-libro-ley-que-mira-lejos-tribunal_23-2147898513.jpg?semt=ais_hybrid&w=740" alt="Abogado">
+  <div class="bio-text">
+    <h2>Lic. Juan Pérez</h2>
+    <p>Graduado con honores de la Universidad de Chile, Juan ha dedicado su vida al Derecho Civil y Empresarial. Con más de una década de experiencia en los tribunales y asesorando a empresas nacionales, su enfoque es claro: justicia, estrategia y resultados.</p>
+    <p>Es miembro activo del Colegio de Abogados y participa regularmente como panelista en seminarios jurídicos nacionales. En su tiempo libre, colabora con fundaciones de acceso a la justicia.</p>
+  </div>
+</section>
+
+<!-- Especialidades -->
+<section id="especialidades" class="section-card">
+  <h2>Especialidades</h2>
+  <div class="specialties-list">
+    <span *ngFor="let skill of skills" class="badge-specialty">{{ skill }}</span>
+  </div>
+</section>
+
+<!-- Casos -->
+<section id="casos" class="section-card">
+  <h2>Casos Recientes</h2>
+  <div *ngFor="let case of cases; let i = index" class="case-item">
+    <div class="case-header" (click)="toggleCase(i)">
+      <h3>{{ case.title }}</h3>
+      <span>{{ selectedCase === i ? '−' : '+' }}</span>
+    </div>
+    <div class="case-body" *ngIf="selectedCase === i">
+      <p><strong>Descripción:</strong> {{ case.description }}</p>
+      <p><strong>Resultado:</strong> {{ case.result }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios -->
+<section id="testimonios" class="section-card light-bg">
+  <h2>Testimonios</h2>
+  <blockquote class="testimonial">
+    “Gracias al Lic. Juan Pérez recuperamos nuestra propiedad después de años de disputa. Profesional y empático.” — María Soto
+  </blockquote>
+  <blockquote class="testimonial">
+    “Su asesoría fue clave para el éxito de nuestra startup. Lo recomiendo sin dudar.” — Carlos Muñoz, CEO de TechLegal
+  </blockquote>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="section-card contact-section">
+  <h2>Contacto</h2>
+  <form (submit)="enviarFormulario()" #contactForm="ngForm">
+    <div class="form-group">
+      <input type="text" name="nombre" placeholder="Tu nombre" ngModel required />
+    </div>
+    <div class="form-group">
+      <input type="email" name="correo" placeholder="Tu correo" ngModel required />
+    </div>
+    <div class="form-group">
+      <textarea name="mensaje" rows="4" placeholder="Tu mensaje..." ngModel required></textarea>
+    </div>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+
+  <div class="contact-info">
+    <p><i class="fas fa-phone"></i> +56 9 1234 5678</p>
+    <p><i class="fas fa-envelope"></i> juan.perez&#64;abogados.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Av. Libertador 1234, Santiago, Chile</p>
+  </div>
+
+  <iframe
+    width="100%"
+    height="300"
+    frameborder="0"
+    style="border:0"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0279442789343!2d-70.64826918480008!3d-33.456939280770714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a1e877a9b1%3A0xc089cadf948b5980!2sPalacio%20de%20Tribunales!5e0!3m2!1ses-419!2scl!4v1592342382367!5m2!1ses-419!2scl"
+    allowfullscreen
+  ></iframe>
+</section>
+<app-footerg  ></app-footerg> 

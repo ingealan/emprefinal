@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejemplo de Página para un doctor</title>
+
+</head>
+
+<body>
+
+  <h1 class="text-center my-4">Ejemplo de Página para un doctor</h1>
+<p class="text-center px-3">
+  Esta es una página de ejemplo diseñada para presentar la información profesional de un doctor. Aquí se puede incluir su experiencia, especialidades médicas, horarios de atención y formas de contacto para facilitar la conexión con sus pacientes.
+</p>
+
+   <!-- Toda la página dentro de una tarjeta -->
+   <div class="card shadow-lg rounded page-card">
+
+    <!-- Navbar moderno -->
+    <nav class="navbar navbar-expand-lg shadow custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">Dr. Juan Pérez</a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#por-que-elegir">¿Por qué elegirnos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Bienvenido al Consultorio del Dr. Juan Pérez</h1>
+        <p class="lead mb-4">Medicina General | Atención Personalizada | Confianza y Profesionalismo</p>
+        <a href="#contacto" class="btn btn-light btn-lg">Reserva tu cita</a>
+      </div>
+    </section>
+
+    <!-- Sobre el doctor -->
+    <section class="container my-5" id="inicio">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Juan Pérez"
+            class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-7">
+          <h2>Dr. Juan Pérez</h2>
+          <h5 class="text-primary mb-3">Médico General</h5>
+          <p>Con más de 15 años de experiencia en el cuidado integral de la salud, el Dr. Juan Pérez se dedica a brindar
+            atención personalizada y de calidad.</p>
+          <p>Graduado de la Universidad Central, especializado en medicina familiar y apasionado por el bienestar de sus
+            pacientes.</p>
+          <a href="#contacto" class="btn btn-primary mt-3">Agenda tu consulta hoy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Por qué elegirnos? -->
+    <section class="container" id="por-que-elegir">
+      <h2 class="text-center">¿Por qué elegir al Dr. Juan Pérez?</h2>
+      <div class="row text-center my-4">
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-people feature-icon"></i>
+          <h5>Atención Humana y Cercana</h5>
+          <p>Recibes un trato cálido y dedicado en cada visita.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-award feature-icon"></i>
+          <h5>Experiencia Comprobada</h5>
+          <p>Más de 15 años ayudando a mejorar la salud de cientos de pacientes.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-clock-history feature-icon"></i>
+          <h5>Horarios Flexibles</h5>
+          <p>Nos adaptamos a tu agenda para una mejor atención.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="bg-white py-5" id="servicios">
+      <div class="container text-center">
+        <h2 class="mb-5">Servicios</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <i class="bi bi-heart-pulse service-icon mb-3"></i>
+            <h5>Consultas Médicas Personalizadas</h5>
+            <p>Diagnóstico y tratamiento individualizado con atención cercana.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-people service-icon mb-3"></i>
+            <h5>Atención Familiar Integral</h5>
+            <p>Cuidados para todas las edades con seguimiento continuo.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-journal-medical service-icon mb-3"></i>
+            <h5>Chequeos Preventivos</h5>
+            <p>Prevención y detección temprana de enfermedades.</p>
+          </div>
+        </div>
+        <a href="#contacto" class="btn btn-primary mt-4">Consulta ahora y cuida tu salud</a>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="container my-5" id="testimonios">
+      <h2 class="text-center mb-5">Testimonios</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text fst-italic">"El Dr. Pérez me brindó una atención excepcional."</p>
+              <h6 class="card-subtitle text-muted">— María G.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text fst-italic">"Gracias a su profesionalismo, pude mejorar rápidamente."</p>
+              <h6 class="card-subtitle text-muted">— Carlos M.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text fst-italic">"Excelente médico, con gran empatía y conocimientos."</p>
+              <h6 class="card-subtitle text-muted">— Ana P.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Componentes Angular simulados -->
+    <app-contacto></app-contacto>
+    <app-footer></app-footer>
+  </div>
+</body>
+    <hr>
+
+
+</html>
+<app-footerg></app-footerg>

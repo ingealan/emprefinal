@@ -1,0 +1,66 @@
+<div class="container">
+  <!-- Título de la página -->
+  <h2 class="text-center my-4 page-title">Selecciona una Profesión</h2>
+  
+  <!-- Mensaje explicativo -->
+  <p class="text-center choose-message">Explora una amplia gama de profesiones y descubre plantillas personalizadas que se adaptan perfectamente a tu carrera profesional. ¡Haz crecer tu presencia en línea hoy mismo!</p>
+  
+  <!-- Carrusel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Carta Abogado -->
+      <div class="carousel-item active" data-bs-interval="10000" (click)="irA('abogado')">
+        <img src="https://www.ambatonews.com/wp-content/uploads/2024/05/frases-de-abogados.jpg" class="d-block w-100 carousel-img" alt="Abogado">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Abogado</h5>
+          <p>Asesoría legal y consulta jurídica personalizada para tu caso.</p>
+        </div>
+      </div>
+      
+      <!-- Carta Arquitecto -->
+      <div class="carousel-item" data-bs-interval="2000" (click)="irA('arquitecto')">
+        <img src="https://www.tuproyectodevida.pe/wp-content/uploads/2021/04/Seis-se%C3%B1ales-1200x628.jpg" class="d-block w-100 carousel-img" alt="Arquitecto">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Arquitecto</h5>
+          <p>Transforma tus ideas en realidad con diseños arquitectónicos únicos.</p>
+        </div>
+      </div>
+      
+      <!-- Carta Médico -->
+      <div class="carousel-item" (click)="irA('medico')">
+        <img src="https://www.eluniverso.com/resizer/v2/DIY4MOX2NFE3ZAFYSK6TNRULJY.jpeg?auth=cd5220ae88d351121a7c2b2d9b17b6b9db6f4eec4075bb1b13b12bfd0d578749&width=1008&height=670&quality=75&smart=true" class="d-block w-100 carousel-img" alt="Médico">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Médico</h5>
+          <p>Consulta médica online y tratamientos personalizados.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- Sección sobre Persoweb -->
+  <div class="about-section">
+    <h3 class="text-center my-5">¿Quiénes somos en Persoweb?</h3>
+    <p class="text-center about-message">
+      En **Persoweb**, nos especializamos en diseñar páginas web adaptadas a las necesidades de pequeños profesionales y emprendedores. Sabemos lo difícil que puede ser destacarse en un mundo digital competitivo, y por eso nuestro objetivo es ayudarte a crear una oficina virtual personalizada que represente tu identidad profesional de manera única.
+    </p>
+    <p class="text-center about-message">
+      Ofrecemos soluciones web a medida, incluyendo diseños modernos, optimización para dispositivos móviles y herramientas de gestión fáciles de usar. Ya seas un abogado, arquitecto, médico o cualquier otro profesional, en **Persoweb** tenemos la plantilla ideal para ti. ¡Haz crecer tu negocio con nosotros!
+    </p>
+    <div class="text-center">
+    </div>
+  </div>
+</div>
+<app-footerg></app-footerg> 

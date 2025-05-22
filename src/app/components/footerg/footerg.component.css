@@ -1,0 +1,31 @@
+.text-pink {
+    color: #ff8cbf;
+}
+
+.btn-pink {
+    background-color: #ff8cbf;
+    border: none;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #e46ba3;
+    color: white;
+}
+
+footer img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+.link-hover:hover {
+    color: #ff4081 !important;
+    transition: color 0.3s;
+}
+
+.text-pink {
+    color: #ff4081;
+}
