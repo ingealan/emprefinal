@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FootergComponent } from '../footerg/footerg.component';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-home',
-  imports: [FootergComponent],
+  imports: [FootergComponent, RouterModule], 
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -25,4 +26,7 @@ export class HomeComponent {
         console.log('Perfil no encontrado');
     }
   }
+  navigateTo(section: string): void {
+  this.router.navigate([`/${section}`]); // Navega a la ruta especificada
+}
 }

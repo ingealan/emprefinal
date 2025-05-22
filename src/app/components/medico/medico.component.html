@@ -19,35 +19,38 @@
    <div class="card shadow-lg rounded page-card">
 
     <!-- Navbar moderno -->
-    <nav class="navbar navbar-expand-lg shadow custom-navbar">
-      <div class="container">
-        <a class="navbar-brand fw-bold text-white" href="#">Dr. Juan Pérez</a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav fw-semibold">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#por-que-elegir">¿Por qué elegirnos?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#testimonios">Testimonios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+ <!-- Navbar moderno -->
+<nav class="navbar navbar-expand-lg shadow custom-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="#">Dr. Juan Pérez</a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav fw-semibold">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#inicio" (click)="navigateTo('inicio')">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#por-que-elegir" (click)="navigateTo('por-que-elegir')">¿Por qué elegirnos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#servicios" (click)="navigateTo('servicios')">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#testimonios" (click)="navigateTo('testimonios')">Testimonios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contacto" (click)="navigateTo('contacto')">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 
     <!-- Hero -->
     <section class="hero text-center">

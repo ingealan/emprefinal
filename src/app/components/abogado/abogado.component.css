@@ -1,43 +1,17 @@
-/* Contenedor principal de la página */
-.abogado-wrapper {
-  background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
-  padding: 2rem 1rem;
-  border-radius: 12px;
-  min-height: 100vh;
-  padding-top: 120px; /* Añadimos un mayor espacio para evitar que se tape con el navbar */
+:root {
+  --navbar-height: 120px;
 }
 
-/* Hero Section */
-.hero-section {
-  background-image: url('https://www.shutterstock.com/image-photo/wooden-gavel-scales-justice-books-600nw-1710821233.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 120px; /* Aseguramos que no quede tapado por el navbar */
+/* ===== RESET & GENERAL ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f4fdf4;
 }
 
-.hero-content {
-  background-color: rgba(46, 125, 50, 0.8);
-  padding: 2rem;
-  border-radius: 12px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-}
-
-/* Estilos del navbar */
+/* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -45,26 +19,24 @@
   right: 0;
   background-color: #2e7d32;
   padding: 1rem 2rem;
-  z-index: 1000;  /* Asegura que el navbar esté por encima de otros elementos */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: var(--navbar-height); /* Mantiene altura consistente */
 }
 
-/* Logo del navbar */
 .navbar-logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 .navbar-logo:hover {
-  opacity: 0.8;  /* Efecto de hover en el logo */
+  opacity: 0.8;
 }
 
-/* Estilos para los enlaces del navbar */
 .navbar-nav .nav-link {
   color: #fff !important;
   font-weight: bold;
@@ -86,13 +58,42 @@
 .navbar-nav .nav-link:hover {
   color: #c8e6c9 !important;
 }
-/* ===== GENERAL ===== */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background: #f4fdf4;
+
+/* ===== PAGE WRAPPER ===== */
+.abogado-wrapper {
+  background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+  padding: calc(var(--navbar-height) + 2rem) 1rem 2rem; /* Asegura espacio debajo del navbar */
+  border-radius: 12px;
+  min-height: 100vh;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  background-image: url('https://www.shutterstock.com/image-photo/wooden-gavel-scales-justice-books-600nw-1710821233.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  /* Elimina margin-top para evitar doble espacio */
+}
+
+.hero-content {
+  background-color: rgba(46, 125, 50, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
 }
 
 /* ===== SECTIONS GENERAL ===== */
@@ -104,7 +105,6 @@ body {
   max-width: 1000px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 .light-bg {
   background-color: #f1f8e9;
 }
@@ -119,7 +119,6 @@ body {
   max-width: 1000px;
   margin: auto;
 }
-
 .bio-photo {
   width: 200px;
   height: 200px;
@@ -128,7 +127,6 @@ body {
   border: 4px solid #2e7d32;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-
 .bio-text {
   flex: 1;
 }
@@ -153,7 +151,6 @@ body {
   transition: all 0.3s ease;
   background-color: #f1f8e9;
 }
-
 .case-header {
   padding: 1rem;
   display: flex;
@@ -165,12 +162,10 @@ body {
   font-weight: bold;
   color: #2e7d32;
 }
-
 .case-body {
   padding: 1rem;
   animation: fadeIn 0.3s ease-in-out;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -196,11 +191,9 @@ form {
   max-width: 600px;
   margin: 0 auto 2rem;
 }
-
 .form-group {
   margin-bottom: 1rem;
 }
-
 input, textarea {
   width: 100%;
   padding: 0.75rem;
@@ -208,7 +201,6 @@ input, textarea {
   border-radius: 8px;
   font-size: 1rem;
 }
-
 button {
   background-color: #2e7d32;
   color: white;
@@ -218,7 +210,6 @@ button {
   cursor: pointer;
   transition: background 0.3s;
 }
-
 button:hover {
   background-color: #1b5e20;
 }
@@ -228,12 +219,10 @@ button:hover {
   text-align: center;
   margin-top: 2rem;
 }
-
 .contact-info p {
   margin: 0.5rem 0;
   font-size: 1rem;
 }
-
 .contact-info i {
   margin-right: 0.5rem;
   color: #2e7d32;

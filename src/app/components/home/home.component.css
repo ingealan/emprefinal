@@ -1,10 +1,90 @@
+/* Estilos generales para el navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo del navbar */
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-logo:hover {
+  opacity: 0.8;
+}
+
+/* Estilos para los enlaces del navbar */
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Remover el hover global que sobrescribe colores personalizados */
+/*
+.navbar-nav .nav-link:hover {
+  color: #1e3d1f !important;
+}
+*/
+
+/* Estilos personalizados por profesión */
+
+/* Abogado */
+.abogado-link {
+  color: #2e7d32 !important;
+}
+.abogado-link:hover {
+  color: #66bb6a !important;
+}
+
+/* Arquitecto */
+.arquitecto-link {
+  color: #8e24aa !important;
+}
+.arquitecto-link:hover {
+  color: #ba68c8 !important;
+}
+
+/* Médico */
+.medico-link {
+  color: #0288d1 !important;
+}
+.medico-link:hover {
+  color: #4fc3f7 !important;
+}
+
+/* Icono en los enlaces */
+.navbar-nav .nav-link i {
+  margin-right: 8px;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 /* Sección sobre Persoweb */
 .about-section {
   background-color: #f0f0f0;
   padding: 40px 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+  margin-top: 70px; /* Asegura que el contenido no se superponga al navbar */
 }
 
 .about-message {
@@ -52,6 +132,7 @@
   margin: 0 auto;
   padding: 40px 20px;
   background-color: #f4f4f9; /* Fondo suave */
+  margin-top: 70px; /* Para que el contenido no se superponga al navbar */
 }
 
 /* Título de la página */

@@ -5,6 +5,7 @@ import { MedicoComponent } from './components/medico/medico.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FootergComponent } from './components/footerg/footerg.component';
+import { ArquitecturaComponent } from './components/arquitectura/arquitectura.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },  // Redireccionar al home
@@ -14,4 +15,5 @@ export const routes: Routes = [
     { path: 'contacto', component: ContactoComponent },  // Página de contacto
     {path: 'footer', component: FooterComponent},  // Página del pie de página
     { path: 'footerg', component: FootergComponent },  // Página del pie de página (versión g)
+    { path: 'arquitecto', component: ArquitecturaComponent}
 ];

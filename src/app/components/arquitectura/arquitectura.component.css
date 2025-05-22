@@ -1,0 +1,124 @@
+:root {
+  --purple-pink-gradient: linear-gradient(135deg, #7b2ff7, #f107a3);
+  --text-light: #f3e6ff;
+  --text-lighter: #ffd6f7;
+}
+
+
+
+.hero-section {
+  background: url('https://th.bing.com/th/id/R.4ddf74fd6f3e5bb26b88971203ebb7f7?rik=23RfZM1cCphAtw&riu=http%3a%2f%2fwww.arqhys.com%2farquitectura%2fwp-content%2fuploads%2f2012%2f12%2farquitectura-moderna.jpg&ehk=OdPDaaWFT%2bueoS%2bgnqKlIoCYI1wr9sUbdJ3LRmZS31s%3d&risl=&pid=ImgRaw&r=0') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;
+  color: #f3e6ff;
+  text-shadow: 0 0 12px #f107a3;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 25px rgba(156, 39, 176, 0.7);
+  position: relative;
+}
+
+
+
+
+
+
+.btn-purple {
+  background: var(--purple-pink-gradient);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(241, 7, 163, 0.6);
+}
+
+.btn-purple:hover {
+  background: #e91e63;
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.8);
+  color: #eb4444;
+}
+
+section.container {
+  margin-top: 4rem;
+}
+
+h2.text-purple-dark {
+  color: #7b2ff7;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px #f107a3;
+}
+
+.card.service-card {
+  border-radius: 15px;
+  background: #fce4f5;
+  color: #7b2ff7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(241, 7, 163, 0.15);
+}
+
+.card.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(241, 7, 163, 0.4);
+}
+
+.project-card img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 10px rgba(241, 7, 163, 0.3);
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card h5 {
+  color: #7b2ff7;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 6px #f107a3;
+}
+
+.project-card p {
+  color: #a64da4;
+}
+
+.bg-purple-light {
+  background: #fce4f5;
+  padding: 3rem 0;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.contact-cta {
+  background: linear-gradient(135deg, #9c27b0, #3f00ff); /* morado fuerte a azul eléctrico */
+  color: #f3e6ff;
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(156, 39, 176, 0.7);
+  text-shadow: 0 0 10px #f107a3;
+}
+
+.contact-cta h2,
+.contact-cta p {
+  color: #f3e6ff;
+}
+
+.contact-cta .btn-purple {
+  background: linear-gradient(45deg, #7b2ff7, #f107a3);
+  color: white;
+  box-shadow: 0 4px 15px rgba(241, 7, 163, 0.6);
+  transition: background 0.3s ease;
+}
+
+.contact-cta .btn-purple:hover {
+  background: #f107a3;
+  box-shadow: 0 6px 20px rgba(241, 7, 163, 0.8);
+  color: #fff;
+}

@@ -1,3 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3">
+  <a class="navbar-brand" [routerLink]="['/home']">
+    <img src="icon.png" alt="Logo o foto de perfil" class="navbar-logo">
+  </a>
+
+  <!-- Botón hamburguesa -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Contenedor colapsable -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <!-- Enlaces de la navegación -->
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home']">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link abogado-link" (click)="navigateTo('abogado')"><i class="bi bi-gavel"></i> Abogado</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link arquitecto-link" (click)="navigateTo('arquitecto')"><i class="bi bi-building"></i> Arquitecto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link medico-link" (click)="navigateTo('medico')"><i class="bi bi-heart"></i> Médico</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
 <div class="container">
   <!-- Título de la página -->
   <h2 class="text-center my-4 page-title">Selecciona una Profesión</h2>
